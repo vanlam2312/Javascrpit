@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="a"> </div>
+    <style>
+        #a{
+            width: 40px;
+            height: 40px;
+            float: left;
+            border: 1px solid gray;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            background-color: gray;
+           
+            
+        }
+    </style>
+<!-- btvn:thuc hien tich vao 1 o xuat hien 1 noi dung bat ki -->
+<script>
+    for (var i = 0; i < 5; i++) {
+        for(var j = 0; j < 10; j++){
+            // document.write("<div id='a'><button onclick='tenham()'>tryit</button> </div>")
+            if(j%2==0){
+            document.write("<div id='a'> <style>background-color: gray; </styte> </div>");
+        }
+        }
+        if (i%2 == 1) {
+            document.write("<div id='a'> <style>background-color: red; </styte> </div>");
+        }
+        //document.write("<div styte='clear: both'></div>");     
+    }
+    function tenham(){
+        alert("hello");
+    }
+</script>
+</body>
+</html>
